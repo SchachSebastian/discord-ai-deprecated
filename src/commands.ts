@@ -1,4 +1,4 @@
-import { Ping } from './commands/ping';
+import { AI } from './commands/ai';
 import { Command } from './commands/command';
 
-export const commands: Command[] = [Ping];
+export const commands: Command[] = [AI];
