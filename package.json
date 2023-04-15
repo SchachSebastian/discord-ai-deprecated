@@ -1,0 +1,25 @@
+{
+  "name": "discord-ai",
+  "version": "0.0.1",
+  "description": "A discord bot that uses OpenAI's API to answer questions right in your favorite messenger.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node build/index.js",
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SchachSebastian",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "typescript": "^5.0.4",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
+}
