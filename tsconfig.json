@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "NodeNext",
     "lib": [
-      "es6"
+      "ES2022"
     ],
     "allowJs": true,
     "outDir": "build",

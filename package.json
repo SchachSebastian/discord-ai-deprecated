@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A discord bot that uses OpenAI's API to answer questions right in your favorite messenger.",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
     "start": "node build/index.js",
     "build": "npx tsc",
@@ -12,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
     "openai": "^3.2.1"
   },
   "devDependencies": {
