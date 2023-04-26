@@ -12,10 +12,14 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 export const answerSingleQuestion = async (question: string): Promise<string | undefined> => {
-	return (await openai.createChatCompletion({
+	const response = await openai.createChatCompletion({
 		model: 'gpt-3.5-turbo',
 		messages: [{ role: 'user', content: question }],
-	})).data.choices[0].message?.content;
+	});
+	console.log('########');
+	console.log(response.data);
+	console.log('########');
+	return response.data.choices[0].message?.content;
 };
 
 export const answerChat = async (client: Client, messages: ChatMessage[]) => {

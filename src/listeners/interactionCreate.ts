@@ -14,7 +14,7 @@ const handleSlashCommand = async (client: Client, interaction: ChatInputCommandI
 	if (!slashCommand) {
 		await interaction.reply({
 			ephemeral: true,
-			content: 'An error has occurred',
+			content: 'Command unknown',
 		});
 		return;
 	}

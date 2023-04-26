@@ -21,6 +21,8 @@ export const AI: Command = {
 		},
 	],
 	run: async (client: Client, interaction: ChatInputCommandInteraction) => {
+		const privateMessage = !!interaction.options.getBoolean('private');
+		await interaction.deferReply({ ephemeral: privateMessage });
 		const message = interaction.options.getString('question');
 		if (!message) {
 			await interaction.reply({
@@ -29,11 +31,9 @@ export const AI: Command = {
 			});
 			return;
 		}
-		const privateMessage = !!interaction.options.getBoolean('private');
 		const answer = await answerSingleQuestion(message);
 		const content = `**Question**:\n${message}\n**Answer**:\n${answer}`;
-		await interaction.reply({
-			ephemeral: privateMessage,
+		await interaction.editReply({
 			content,
 		});
 	},
