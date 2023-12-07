@@ -1,4 +1,4 @@
-## discord-ai
+## discord-ai [Deprecated]
 
 ![Github Stars](https://img.shields.io/github/stars/SchachSebastian/discord-ai)
 ![Github Forks](https://img.shields.io/github/forks/SchachSebastian/discord-ai)
@@ -13,15 +13,10 @@ Small Node.js Typescript Discord bot using the OpenAI API to answer questions.
 
 ## About the project
 
-In the last time many new projects using AI (especially **ChatGPT**) were developed to create a new type of user
-experience.
-
-Many great open source projects were created, but I was missing something.
-
-I thought, why not use your favorite AI bot (**ChatGPT**) on your favorite platform (**Discord**)?
-
-This project is still in work and more a proof of concept than a perfect bot, but I hope you like to play around with
-it. :)
+Started developing this project to learn more about the OpenAI API and how to use it and to try integrating ai in
+Discord.
+Discord then released their own ai bot, so I decided to stop developing this project.
+It's still interesting to see how to use the OpenAI API and how to integrate it in a Discord bot.
 
 ## Getting started
 
@@ -73,19 +68,6 @@ Open the Discord server you invited the bot to and use one of the commands below
 
 `/ai` <question> - Ask the ai a single question
 
-## Roadmap
-
-- [X] Add a command to ask single questions to the AI bot
-- [ ] Let the AI bot answer to messages pinging it
-- [ ] Let the AI bot use the last message to answer questions
-- [ ] Let the AI bot react to messages
-- [ ] Let the AI bot access the entire channel history to answer questions
-
 ## License
 
 This project is licensed under the `MIT License` - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-Contributions are always welcome!
-I'm also happy to get new ideas and improvements as well as bug reports to improve the project.
